@@ -1,91 +1,73 @@
-🍽️ Interactive Food Ordering Dashboard
+# 🍽️ Interactive Food Ordering Dashboard
 
 A modern and interactive food ordering web application built using HTML, CSS, and JavaScript.
-This project simulates a real-world food ordering experience with dynamic UI, filtering, search functionality, and a persistent shopping cart.
 
-⸻
+This project simulates a real-world food ordering experience where users can search meals, filter categories, and manage a shopping cart with real-time updates.
 
-🚀 Features
+---
 
-* 🔍 Real-time Search
-    Instantly filter meals as you type
-* 🗂️ Category Filtering
-    Browse meals by Promotions, Popular, or All Meals
-* 🛒 Shopping Cart System
-    Add/remove items dynamically with live total calculation
-* 💾 Persistent Cart (LocalStorage)
-    Cart data is saved even after page refresh
-* 🌙 Dark Mode Toggle
-    Smooth theme switching for better user experience
-* 📱 Responsive Design
-    Works across desktop, tablet, and mobile devices
-* 🧾 Modal View
-    Click any meal to see details in a popup
+## 🚀 Features
 
-⸻
+- Real-time search functionality  
+- Category-based filtering (Promotions, Popular, All Meals)  
+- Dynamic shopping cart (add/remove items)  
+- Automatic total price calculation  
+- LocalStorage support (cart persists after refresh)  
+- Dark mode toggle  
+- Responsive design  
+- Modal view for meal details  
 
-🧠 Technologies Used
+---
 
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
+## 🧠 Technologies
 
-⸻
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)  
 
-⚙️ How It Works
+---
 
-* Each meal card dynamically interacts with the cart system
-* Prices are extracted from the DOM and parsed using JavaScript
-* Cart updates instantly and stores data using LocalStorage
-* UI responds to user input in real-time (search & filtering)
+## ⚙️ How It Works
 
-⸻
+- Meals are dynamically displayed and filtered  
+- Prices are extracted from the DOM and processed with JavaScript  
+- Cart updates instantly on user interaction  
+- Data is stored in LocalStorage to persist across sessions  
 
-🧩 Key Concepts Demonstrated
+---
 
-* DOM Manipulation
-* Event Handling
-* LocalStorage Usage
-* Dynamic Rendering
-* UI/UX Interaction Logic
+## ▶️ Run Locally
 
-⸻
-
-▶️ How to Run
-
-1. Clone the repository:
+Clone the repository:
 
 git clone https://github.com/ozrnehir/interactive-food-ordering-dashboard.git
 
-2. Open the project folder
-3. Run:
+Open the project:
 
 open index.html
 
-or simply double-click the file
+---
 
-⸻
+## 🎯 What I Learned
 
-📸 Project Overview
+- DOM manipulation  
+- Event handling  
+- LocalStorage usage  
+- Debugging and fixing logic bugs  
+- Building interactive UI components  
 
-A clean and interactive dashboard where users can:
+---
 
-* Search meals
-* Filter categories
-* Add items to cart
-* Track total price dynamically
+## 💡 Future Improvements
 
-⸻
+- Backend integration (Node.js / API)  
+- User authentication  
+- Quantity-based cart system  
+- Payment simulation  
 
-💡 Future Improvements
+---
 
-* Backend integration (Node.js / API)
-* User authentication system
-* Quantity-based cart system
-* Payment simulation
+## 👩‍💻 Author
 
-⸻
+Elif Nehir Özer  
 
-👩‍💻 Author
-
-Elif Nehir Özer
