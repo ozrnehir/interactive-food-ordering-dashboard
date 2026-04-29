@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Meals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h2>Delicious Foods</h2>
+      <nav>
+        <ul type="none">
+          <li><a href="#main">Main Page</a></li>
+          <li><a href="#menus">Menus</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="toggle-container">
+        <span>🌞</span>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+      </div>
+    </header>
+    <div class="search-container">
+      <input id="searchInput" type="text" placeholder="Name of food..." />
+      <button id="searchButton" type="button">Search</button>
+    </div>
+
+    <div class="filter-buttons">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="promotions">Promotions</button>
+      <button class="filter-btn" data-filter="populars">Popular</button>
+      <button class="filter-btn" data-filter="all-meals">All Meals</button>
+    </div>
+
+    <div class="cart-box">
+      <h3>🛒 Your Cart</h3>
+      <p id="cartCount">Items: 0</p>
+      <p id="cartTotal">Total: 0 Euro</p>
+      <div id="cartItems"></div>
+    </div>
+
+    <div class="hero" id="main">
+      <h3>You are on the right place for perfect meals</h3>
+      <p>Perfect meals are close to you...</p>
+      <button type="button">Discover Our Meals</button>
+    </div>
+
+    <section class="promotions" id="menus">
+      <h4>Meals with Promotions</h4>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="img/lahmacun.jpeg" alt="Lahmacun" />
+          <h3>Lahmacun</h3>
+          <p>
+            Lahmacun is a traditional dish originating from the Middle East and
+            Anatolia, made by spreading a mixture of minced meat, vegetables
+            (onions, garlic, tomatoes, peppers) and spices on thinly rolled
+            dough and baking it in a stone oven.
+          </p>
+          <span><del>15€</del>&nbsp;10€ </span>
+          <button class="order-button">Order</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/iskender.webp" alt="Lahmacun" />
+          <h3>İskender</h3>
+          <p>
+            Iskender kebab (or Bursa kebab) is one of the most popular kebabs in
+            Turkish cuisine, invented by Iskender Efendi in Bursa in the 19th
+            century. It consists of thinly sliced ​​döner meat served on pita
+            bread, with tomato sauce, hot butter, and yogurt.
+          </p>
+          <span><del>25€</del>&nbsp;20€ </span>
+          <button class="order-button">Order</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/mantı.jpeg" alt="Lahmacun" />
+          <h3>Manti</h3>
+          <p>
+            Manti is a traditional Turkish dish made by wrapping thinly rolled
+            dough pieces in spiced minced meat (sometimes potatoes or cheese),
+            folding them into a bundle shape, and boiling them in water.
+          </p>
+          <span><del>20€</del>&nbsp;15€ </span>
+          <button class="order-button">Order</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="populars">
+      <h4>Popular Meals</h4>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="img/images.jpeg" alt="" />
+          <h3>İçli Köfte</h3>
+          <p>
+            İçli köfte is one of the most beloved traditional flavors of Turkish
+            cuisine, made by kneading fine bulgur into a dough and filling it
+            with a mixture of minced meat, onions, walnuts and spices.
+          </p>
+          <span>20€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img
+            src="img/Karnıyarık_-_Lunch_at_Yanyali_Fehmi_Lokantasi_(6421044715).jpg"
+            alt=""
+          />
+          <h3>Karniyarik</h3>
+          <p>
+            Karnıyarık is one of the most classic and beloved hot eggplant
+            dishes in Turkish cuisine.
+          </p>
+          <span>22€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/Imam-Bayildi-Featured.jpg.webp" alt="" />
+          <h3>İmam Bayildi</h3>
+          <p>
+            Imam Bayildi is a classic Turkish olive oil dish prepared with
+            eggplant, plenty of onions, garlic, tomatoes, and olive oil, usually
+            served cold or at room temperature.
+          </p>
+          <span>25€</span>
+          <button class="order-button">Order</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-meals">
+      <h4>All Meals</h4>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="img/pide.jpeg" alt="" />
+          <h3>Pide</h3>
+          <p>
+            Pide is a traditional Turkish dish made from leavened dough that is
+            rolled out thinly and flat, topped with toppings such as minced
+            meat, diced meat, cheese, and sausage, and then baked in a stone
+            oven.
+          </p>
+          <span>12€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/tantuni.jpeg" alt="" />
+          <h3>Tantuni</h3>
+          <p>
+            Tantuni is a very popular street food unique to the Mersin region,
+            prepared by finely chopping beef (steak) or chicken and cooking it
+            in a cast iron pan with cottonseed oil, spices, and water.
+          </p>
+          <span>10€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/yapraksarma.jpeg" alt="" />
+          <h3>Yaprak Sarmasi</h3>
+          <p>
+            Yaprak sarma is one of the oldest and most beloved traditional
+            flavors of Turkish cuisine, made by wrapping pickled or fresh vine
+            leaves in a thin, long shape, with a filling prepared with rice,
+            onions, spices, and olive oil (or meat).
+          </p>
+          <span>18€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/börek.jpeg" alt="" />
+          <h3>Börek</h3>
+          <p>
+            Börek is a traditional Turkish pastry made by placing fillings such
+            as cheese, minced meat, spinach, or potatoes between thinly rolled
+            dough or layers of pastry, and then baking it in an oven, pan, or on
+            a griddle.
+          </p>
+          <span>7€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/kurufasulye.jpeg" alt="" />
+          <h3>Kuru Fasulye</h3>
+          <p>
+            It is one of the cornerstones of Turkish cuisine, usually cooked
+            with onions and tomato paste; meat, meatless, or sausage versions
+            are common. Served with rice and pickles, it is considered a
+            "national dish".
+          </p>
+          <span>15€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/sütlaç.jpeg" alt="" />
+          <h3>Sütlaç</h3>
+          <p>
+            Rice pudding, basically prepared by cooking milk, rice, and sugar,
+            is one of the oldest and most beloved traditional milk-based
+            desserts in Turkish cuisine.
+          </p>
+          <span>11€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/döner.jpeg" alt="" />
+          <h3>Döner</h3>
+          <p>
+            Döner is a traditional type of kebab unique to Turkish cuisine,
+            where pieces of meat (beef, lamb, or chicken) marinated with spices
+            are threaded onto a skewer and cooked by rotating it over a vertical
+            grill.
+          </p>
+          <span>10€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/pialv.jpeg" alt="" />
+          <h3>Pilav</h3>
+          <p>
+            Pilaf is one of the basic and ritualistic dishes of Turkish cuisine,
+            prepared by cooking grains such as rice, bulgur, vermicelli, or
+            couscous in water or broth.
+          </p>
+          <span>8€</span>
+          <button class="order-button">Order</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/patateskızartması.jpeg" alt="" />
+          <h3>French Fries</h3>
+          <p>
+            French fries are a popular food made by deep-frying potatoes, sliced
+            ​​into loaf or julienne shapes, until crispy on the outside and soft
+            on the inside.
+          </p>
+          <span>12€</span>
+          <button class="order-button">Order</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <h2>About Us</h2>
+      <p>
+        Delicious Foods is an interactive food ordering dashboard designed to
+        provide users with a smooth browsing and ordering experience. The
+        platform allows users to search meals, filter categories, view detailed
+        information, and manage a persistent shopping cart.
+      </p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact</h2>
+      <p>📧 Email: deliciousfoods@example.com</p>
+      <p>📞 Phone: +49 123 456 789</p>
+      <p>📍 Location: Berlin, Germany</p>
+    </section>
+
+    <footer class="footer">
+      <p>2026 Delicious Meals Website</p>
+    </footer>
+
+    <div id="mealModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <img id="modalImage" src="" alt="" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <span id="modalPrice"></span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
